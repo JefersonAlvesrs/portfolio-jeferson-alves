@@ -1,5 +1,16 @@
 const projects = [
   {
+    name: "TaskFlow",
+    category: "fullstack",
+    type: "Full stack",
+    desc: "Aplicação full stack multiusuário com autenticação, recuperação de senha, tarefas por prioridade e prazo, filtros e persistência em PostgreSQL.",
+    stack: ["Python", "Flask", "PostgreSQL", "Brevo API", "HTML", "CSS"],
+    accent: "#60a5fa",
+    image: "assets/images/taskflow.png",
+    live: "https://taskflow-5g4z.onrender.com/",
+    repo: "https://github.com/JefersonAlvesrs/TaskFlow",
+  },
+  {
     name: "Padaria Aurora",
     category: "comercial",
     type: "Site comercial",
@@ -120,17 +131,6 @@ const projects = [
     live: "https://jefersonalvesrs.github.io/Atlas-Travel/",
     repo: "https://github.com/JefersonAlvesrs/Atlas-Travel",
   },
-  {
-    name: "TaskFlow",
-    category: "fullstack",
-    type: "Full stack",
-    desc: "Gerenciador de tarefas com cadastro, autenticação, prioridades, prazos, filtros e banco de dados.",
-    stack: ["Python", "Flask", "SQL", "HTML", "CSS"],
-    accent: "#60a5fa",
-    image: "assets/images/taskflow.png",
-    live: "https://taskflow-5g4z.onrender.com/",
-    repo: "https://github.com/JefersonAlvesrs/TaskFlow",
-  },
 ];
 const cards = document.getElementById("cards");
 const safe = (s) =>
@@ -148,7 +148,7 @@ function render(category = "todos") {
   cards.innerHTML = selected
     .map((p) => {
       const index = projects.indexOf(p);
-      const repo = `<a href="${p.repo}" target="_blank" rel="noopener noreferrer" class="project-link subtle">GitHub ↗</a>`;
+
       return `<article class="project-card" style="--accent:${p.accent}">
    <a class="project-cover project-cover-link" href="${p.live}" target="_blank" rel="noopener noreferrer" aria-label="Abrir site ${safe(p.name)}">
     <img src="${p.image}" alt="Captura do projeto ${safe(p.name)}" loading="lazy"><span class="cover-type">${safe(p.type)}</span>
@@ -157,8 +157,7 @@ function render(category = "todos") {
     <h3><a class="project-title-link" href="${p.live}" target="_blank" rel="noopener noreferrer">${safe(p.name)}</a></h3>
     <p>${safe(p.desc)}</p><div class="tags">${p.stack.map((t) => `<span>${safe(t)}</span>`).join("")}</div>
     <div class="project-actions"><a href="${p.live}" target="_blank" rel="noopener noreferrer" class="project-link primary">Ver site ↗</a>
-     <button class="details-toggle" aria-expanded="false" aria-controls="details-${index}" data-id="${index}">Detalhes <span>＋</span></button></div>
-    <div class="details" id="details-${index}" hidden><p>${safe(p.desc)}</p><div class="detail-actions">${repo}</div></div>
+     <a class="details-toggle" href="projeto.html?id=${index}">Ver projeto completo ↗</a></div>
    </div></article>`;
     })
     .join("");
@@ -175,15 +174,6 @@ document.querySelectorAll(".filter").forEach((b) =>
     render(b.dataset.filter);
   }),
 );
-cards.addEventListener("click", (e) => {
-  const b = e.target.closest(".details-toggle");
-  if (!b) return;
-  const panel = document.getElementById("details-" + b.dataset.id);
-  const opening = panel.hidden;
-  panel.hidden = !opening;
-  b.setAttribute("aria-expanded", String(opening));
-  b.querySelector("span").textContent = opening ? "−" : "＋";
-});
 const menu = document.getElementById("menu"),
   nav = document.getElementById("navlinks");
 menu.addEventListener("click", () => {

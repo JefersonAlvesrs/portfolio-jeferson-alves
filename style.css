@@ -884,3 +884,17 @@ h2 em {
     transition: none;
   }
 }
+
+/* Conteúdo técnico expansível dos projetos */
+.project-detail-section {
+  margin: 0 0 14px;
+}
+.project-detail-section strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+.project-detail-section p {
+  margin: 0;
+  line-height: 1.55;
+}
