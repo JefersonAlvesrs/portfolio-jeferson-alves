@@ -1,55 +1,96 @@
 # Portfólio — Jeferson Alves
 
-Portfólio pessoal desenvolvido com **HTML5, CSS3 e JavaScript**, com visual moderno, tema escuro e layout responsivo. Reúne aplicações web, projetos frontend e sites comerciais, demonstrando conhecimentos em desenvolvimento de interfaces, integração de sistemas e organização de projetos.
+Portfólio pessoal desenvolvido com **HTML5, CSS3 e JavaScript**, com tema escuro, interface responsiva e navegação interativa. Reúne **12 projetos concluídos** — aplicações full stack, projetos frontend e sites comerciais demonstrativos — e **6 ideias de projetos futuros**.
 
-## 🌐 Acesse o portfólio
+O objetivo é apresentar minhas habilidades técnicas, meus trabalhos e minha evolução como desenvolvedor web.
 
-**[Visualizar portfólio online](https://jefersonalvesrs.github.io/portfolio-jeferson-alves/)**
+### 🌐 [Acessar o portfólio online](https://jefersonalvesrs.github.io/portfolio-jeferson-alves/)
 
-## ✨ Funcionalidades
+[![Página inicial do portfólio](imagens/inicio.png)](imagens/inicio.png)
 
-- Interface responsiva para computadores, tablets e celulares.
+*Página inicial do portfólio — clique na imagem para ampliar.*
+
+## ✨ Funcionalidades do portfólio
+
+- Interface responsiva para desktop, tablet e celular.
 - Menu de navegação adaptado para dispositivos móveis.
-- Filtros de projetos por categoria.
-- Cards com imagens, descrições, tecnologias e links de demonstração.
-- Páginas individuais com informações detalhadas dos projetos.
-- Apresentação de funcionalidades, arquitetura e tecnologias utilizadas.
-- Galeria de capturas de tela do TaskFlow.
-- Links para repositórios GitHub e aplicações publicadas.
-- Navegação com botão de retorno ao topo.
-- Recursos de acessibilidade e respeito à preferência por movimento reduzido.
+- Filtros dos projetos concluídos por categoria.
+- Cards com imagens, descrições, tecnologias e links.
+- Páginas individuais com informações, funcionalidades e galerias dos projetos.
+- Área separada para projetos futuros, com descrições e imagens conceituais.
+- Acesso às demonstrações, repositórios GitHub e currículo em PDF.
+- Navegação com retorno ao topo e respeito à preferência por movimento reduzido.
 
-## 🚀 Projetos em destaque
+## 🚀 Projetos concluídos
 
-### TaskFlow — Gerenciador de Tarefas
+[![Projetos concluídos do portfólio](imagens/concluidos.png)](imagens/concluidos.png)
 
-Aplicação web full stack desenvolvida com **Python, Flask e PostgreSQL**, com banco de dados hospedado no Supabase e aplicação publicada na Render.
+*Visão dos projetos concluídos — clique para ampliar.*
 
-Principais funcionalidades:
+### Full Stack
 
-- Cadastro, autenticação e gerenciamento de sessões.
+**TaskFlow — Gerenciador de tarefas**
+
+Aplicação web com **Python, Flask e PostgreSQL**, banco de dados hospedado no **Supabase** e aplicação publicada na **Render**.
+
+- Cadastro, login e gerenciamento de sessões.
 - Criação, edição, conclusão, reabertura e exclusão de tarefas.
-- Organização por prioridades e prazos.
-- Filtros e identificação de tarefas atrasadas.
-- Painel com indicadores de atividades.
-- Recuperação de senha com integração à API Brevo.
-- Proteções de autenticação, CSRF, consultas parametrizadas e limitação de tentativas.
+- Prioridades, prazos, filtros e identificação de tarefas atrasadas.
+- Painel com indicadores.
+- Recuperação de senha por e-mail com a API Brevo.
+- Medidas de proteção como CSRF, consultas parametrizadas e limitação de tentativas.
 
 **[Acessar TaskFlow](https://taskflow-5g4z.onrender.com/)**
 
-### Projetos frontend e sites comerciais
+### Frontend
 
-O portfólio também reúne projetos demonstrativos de diferentes segmentos, como turismo, alimentação, serviços e comércio, desenvolvidos com HTML, CSS e JavaScript.
+| Projeto | Descrição |
+|---|---|
+| **CineVerse** | Catálogo de filmes com busca, filtros, listas e roleta de seleção. |
+| **Apex Motors** | Catálogo automotivo com filtros, detalhes dos veículos e simulação ilustrativa de financiamento. |
+| **Atlas Travel** | Descoberta de destinos com pesquisa, favoritos e planejamento demonstrativo de viagens. |
+| **Órbita** | Experiência conceitual de turismo espacial, com exploração de destinos e reservas simuladas. |
 
-Cada projeto apresenta suas características, tecnologias e links disponíveis para demonstração e código-fonte.
+### Sites comerciais demonstrativos
 
-## 🛠️ Tecnologias
+| Projeto | Descrição |
+|---|---|
+| **Lancheria BR** | Cardápio, produtos e contato via WhatsApp. |
+| **Padaria Aurora** | Apresentação institucional e catálogo de produtos. |
+| **Barbearia Dom** | Serviços, preços e agendamento demonstrativo. |
+| **Oficina Torque Prime** | Serviços automotivos e solicitação de orçamento. |
+| **Metalúrgica Vértice** | Site institucional do setor metalmecânico. |
+| **Clínica Odontológica Lumina** | Apresentação de tratamentos e contato. |
+| **Clínica Veterinária Fulcher** | Serviços veterinários e informações institucionais. |
+
+Os projetos comerciais demonstram soluções de interface e navegação para diferentes segmentos; formulários e solicitações não representam sistemas completos de atendimento ou pagamento.
+
+## 💡 Projetos futuros
+
+[![Seção de projetos futuros](imagens/futuros.png)](imagens/futuros.png)
+
+*Conceitos visuais dos projetos planejados — clique para ampliar.*
+
+| Projeto | Ideia |
+|---|---|
+| **TinderJobs** | Plataforma de recrutamento com currículos, vagas, curtidas mútuas, matches e conversas para entrevistas. |
+| **MiComida 2.0** | Descoberta de restaurantes por filtros combináveis de culinária, preço, distância, funcionamento e avaliações. |
+| **CineTrack** | Catálogo de filmes e séries com listas personalizadas, filtros avançados, histórico, estatísticas e roleta. |
+| **Conferidor de Loterias** | Conferência de apostas, consulta de resultados históricos e identificação de premiações. |
+| **FuelTrack** | Registro de abastecimentos, consumo e despesas, com análises para motoristas e postos. |
+| **STRONG** | Plataforma de treinos e acompanhamento físico para homens trans; ideia proposta por outra pessoa, com desenvolvimento planejado por Jeferson Alves. |
+
+> **Importante:** estes seis projetos estão **planejados**, não concluídos. As imagens são **protótipos conceituais**, e as funcionalidades ainda poderão ser ajustadas durante o desenvolvimento.
+
+## 🛠️ Tecnologias e ferramentas
 
 **Portfólio:** HTML5, CSS3 e JavaScript.
 
 **Tecnologias demonstradas nos projetos:** Python, Flask, PostgreSQL, SQL, integração com APIs, Git e GitHub.
 
-## 📁 Estrutura do portfólio
+**Ferramentas e serviços:** Visual Studio Code, GitHub Pages, Render, Supabase e Brevo.
+
+## 📁 Estrutura do repositório
 
 ```text
 portfolio-jeferson-alves/
@@ -60,32 +101,45 @@ portfolio-jeferson-alves/
 ├── projeto.css
 ├── projeto.js
 ├── projetos-dados.js
-├── README.md
+├── detalhes-projetos.js
+├── futuros.html
+├── futuro.html
+├── futuros-dados.js
 ├── assets/
 │   └── images/
-│       └── taskflow/
+│       ├── taskflow/
+│       ├── galerias/
+│       └── futuros/
 ├── imagens/
-└── curriculo/
-    └── curriculo-jeferson-alves.pdf
+│   └── readme/
+│       ├── inicio.png
+│       ├── concluidos.png
+│       └── futuros.png
+├── curriculo/
+│   └── curriculo-jeferson-alves.pdf
+└── README.md
 ```
-
-A pasta `assets/images` contém imagens utilizadas nas páginas dos projetos. A pasta `curriculo` armazena o currículo profissional em PDF.
 
 ## ▶️ Executar localmente
 
-1. Clone ou baixe o repositório.
-2. Abra a pasta no Visual Studio Code.
-3. Execute `index.html` utilizando a extensão Live Server ou um servidor HTTP local.
-4. Navegue pelos projetos e suas páginas individuais.
+1. Clone o repositório:
 
-O portfólio é estático e não exige instalação de dependências de backend.
+   ```bash
+   git clone https://github.com/JefersonAlvesrs/portfolio-jeferson-alves.git
+   ```
+
+2. Abra a pasta no Visual Studio Code.
+3. Inicie o **Live Server** (ou outro servidor HTTP local).
+4. Abra `index.html` e navegue pelo portfólio.
+
+O portfólio é estático e não exige a instalação de dependências de backend.
 
 ## 🔗 Links
 
-- **Portfólio:** https://jefersonalvesrs.github.io/portfolio-jeferson-alves/
-- **GitHub:** https://github.com/JefersonAlvesrs
-- **LinkedIn:** https://www.linkedin.com/in/jeferson-alves-de-abreu-986253419/
-- **TaskFlow:** https://taskflow-5g4z.onrender.com/
+- 🌐 [Portfólio online](https://jefersonalvesrs.github.io/portfolio-jeferson-alves/)
+- 💻 [GitHub](https://github.com/JefersonAlvesrs)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jeferson-alves-de-abreu/)
+- 🚀 [TaskFlow](https://taskflow-5g4z.onrender.com/)
 
 ## 👨‍💻 Autor
 

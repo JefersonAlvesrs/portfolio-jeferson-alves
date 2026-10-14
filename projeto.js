@@ -125,20 +125,34 @@ if (!p) {
         `<p>Como evolução do projeto, podem ser adicionados testes automatizados, observabilidade, aprimoramentos de acessibilidade e um armazenamento compartilhado para o limitador de requisições em cenários com múltiplos processos.</p>`,
       );
   } else {
-    content +=
-      section(
-        "Sobre o projeto",
-        `<p>${esc(p.desc)} Este projeto faz parte do portfólio de desenvolvimento web, com foco em interface, navegação e apresentação de conteúdo.</p>`,
-      ) +
-      section("Tecnologias utilizadas", list(p.stack)) +
-      section(
-        "Interface e demonstração",
-        `<p>A captura principal está apresentada acima. Acesse a demonstração para explorar as páginas e os recursos disponíveis.</p>`,
-      ) +
-      section(
-        "Código-fonte",
-        `<p>O repositório público permite conhecer a estrutura de arquivos e a implementação do projeto.</p>`,
-      );
+    const extra = (window.projectDetails || {})[p.name];
+    if (extra) {
+      const screenshots = extra.gallery
+        .map(
+          (path, i) =>
+            `<figure><a href="${esc(path)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(path)}" alt="Captura ${i + 1} de ${esc(p.name)}"></a><figcaption>Captura real ${i + 1} · clique para ampliar ↗</figcaption></figure>`,
+        )
+        .join("");
+      content +=
+        section(
+          "Sobre o projeto",
+          `<p>${esc(p.desc)} O projeto apresenta uma solução visual e interativa voltada ao seu segmento, desenvolvida com HTML, CSS e JavaScript.</p><p class="detail-note">${esc(extra.context)}</p>`,
+        ) +
+        section("Funcionalidades e recursos", list(extra.features)) +
+        section(
+          "Galeria de telas reais",
+          `<div class="task-gallery">${screenshots}</div>`,
+        ) +
+        section("Tecnologias utilizadas", list(p.stack)) +
+        section(
+          "Implementação",
+          `<p>Projeto organizado em arquivos de interface, estilos e scripts, com atenção à navegação, apresentação visual e adaptação a diferentes tamanhos de tela. Consulte o repositório para conhecer o código.</p>`,
+        );
+    } else {
+      content +=
+        section("Sobre o projeto", `<p>${esc(p.desc)}</p>`) +
+        section("Tecnologias utilizadas", list(p.stack));
+    }
   }
   main.innerHTML = content;
 }
