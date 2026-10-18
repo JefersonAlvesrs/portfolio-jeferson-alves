@@ -130,7 +130,7 @@ if (!p) {
       const screenshots = extra.gallery
         .map(
           (path, i) =>
-            `<figure><a href="${esc(path)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(path)}" alt="Captura ${i + 1} de ${esc(p.name)}"></a><figcaption>Captura real ${i + 1} · clique para ampliar ↗</figcaption></figure>`,
+            `<figure><a href="${esc(path)}" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="${esc(path)}" alt="${extra.illustrativeGallery ? "Arte ilustrativa" : "Captura " + (i + 1)} de ${esc(p.name)}"></a><figcaption>${extra.illustrativeGallery ? "Arte ilustrativa" : "Captura real " + (i + 1)} · clique para ampliar ↗</figcaption></figure>`,
         )
         .join("");
       content +=
@@ -140,7 +140,7 @@ if (!p) {
         ) +
         section("Funcionalidades e recursos", list(extra.features)) +
         section(
-          "Galeria de telas reais",
+          extra.illustrativeGallery ? "Apresentação visual" : "Galeria de telas reais",
           `<div class="task-gallery">${screenshots}</div>`,
         ) +
         section("Tecnologias utilizadas", list(p.stack)) +

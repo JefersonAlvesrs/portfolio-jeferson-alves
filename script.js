@@ -11,6 +11,17 @@ const projects = [
     repo: "https://github.com/JefersonAlvesrs/TaskFlow",
   },
   {
+    name: "NovaStore",
+    category: "frontend",
+    type: "Frontend",
+    desc: "E-commerce demonstrativo com 23 páginas, catálogo de 48 produtos, busca inteligente, filtros, favoritos, comparação, carrinho, checkout simulado e histórico local de pedidos.",
+    stack: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+    accent: "#a78bfa",
+    image: "assets/images/novastore.svg",
+    live: "https://jefersonalvesrs.github.io/NovaStore/",
+    repo: "https://github.com/JefersonAlvesrs/NovaStore",
+  },
+  {
     name: "Padaria Aurora",
     category: "comercial",
     type: "Site comercial",

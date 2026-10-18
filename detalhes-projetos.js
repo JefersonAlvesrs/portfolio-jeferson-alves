@@ -1,4 +1,17 @@
 window.projectDetails = {
+  NovaStore: {
+    features: [
+      "23 páginas HTML interligadas e layout responsivo",
+      "Catálogo demonstrativo de 48 produtos com busca, categorias, marcas e filtros de preço",
+      "Favoritos, comparação de produtos e carrinho com controle de quantidade",
+      "Checkout simulado, confirmação e histórico de pedidos no navegador",
+      "Pesquisa com sinônimos e máscara monetária em reais",
+      "Estados e preferências locais com JavaScript e LocalStorage",
+    ],
+    gallery: ["assets/images/novastore.svg"],
+    illustrativeGallery: true,
+    context: "Projeto de portfólio sem backend, pagamentos ou autenticação real. Valores, estoques e avaliações são fictícios. A imagem abaixo é uma arte de apresentação, não uma captura de tela; confira a demonstração online para ver a interface real.",
+  },
   "Apex Motors": {
     features: [
       "Catálogo de veículos premium com filtros e apresentação detalhada",
