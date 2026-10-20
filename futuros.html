@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Projetos futuros planejados por Jeferson Alves."
+    />
+    <title>Projetos futuros | Jeferson Alves</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .future-shell {
+        width: min(1180px, 92%);
+        margin: auto;
+        padding: 62px 0 100px;
+      }
+      .future-back {
+        color: #93c5fd;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 28px;
+      }
+      .future-eyebrow {
+        font-size: 0.76rem;
+        letter-spacing: 0.16em;
+        color: #7db5ff;
+        font-weight: 800;
+      }
+      .future-shell h1 {
+        font-size: clamp(2rem, 4.3vw, 3.5rem);
+        line-height: 1.1;
+        margin: 12px 0;
+      }
+      .future-intro {
+        color: #a8b9d2;
+        max-width: 780px;
+        line-height: 1.7;
+        margin: 18px 0 36px;
+      }
+      .future-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+      .future-card {
+        border: 1px solid #293956;
+        background: linear-gradient(150deg, #101c32, #0b1426);
+        border-radius: 18px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .future-image {
+        position: relative;
+      }
+      .future-category {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        z-index: 1;
+        padding: 7px 13px;
+        border-radius: 999px;
+        background: rgba(8, 18, 32, 0.91);
+        border: 1px solid #6b8cb8;
+        color: #fff;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        font-size: 0.7rem;
+        box-shadow: 0 3px 14px #0009;
+      }
+      .future-card img {
+        width: 100%;
+        height: 192px;
+        object-fit: cover;
+        display: block;
+        background: #0b1525;
+      }
+      .future-card-body {
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .future-status {
+        font-size: 0.7rem;
+        color: #a8c9ff;
+        letter-spacing: 0.11em;
+        font-weight: 800;
+      }
+      .future-card h2 {
+        margin: 10px 0 7px;
+        font-size: 1.45rem;
+        color: #f0f5ff;
+      }
+      .future-card p {
+        color: #c1cee0;
+        font-size: 0.93rem;
+        line-height: 1.58;
+      }
+      .future-features {
+        padding-left: 19px;
+        margin: 12px 0 18px;
+        color: #c1cee0;
+        font-size: 0.88rem;
+        line-height: 1.55;
+      }
+      .future-features li {
+        margin: 7px 0;
+      }
+      .future-tech {
+        margin-top: auto;
+        padding-top: 15px;
+        border-top: 1px solid #2a3850;
+        font-size: 0.83rem;
+        color: #91a8c7;
+      }
+      .future-card .future-note {
+        font-size: 0.75rem;
+        color: #90a2bd;
+        margin: 12px 0 0;
+      }
+      .future-detail-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 14px;
+        margin-top: 18px;
+        border: 1px solid #415d86;
+        border-radius: 10px;
+        color: #dbeaff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.88rem;
+      }
+      .future-detail-link:hover {
+        background: #18304f;
+      }
+      .future-disclaimer {
+        border: 1px solid #2c405f;
+        background: #111c2d;
+        border-radius: 12px;
+        padding: 15px 18px;
+        color: #b7c7db;
+        font-size: 0.86rem;
+        line-height: 1.6;
+        margin: 0 0 28px;
+      }
+      .future-detail {
+        max-width: 890px;
+        margin: auto;
+      }
+      .future-detail > img {
+        width: 100%;
+        max-height: 440px;
+        object-fit: contain;
+        background: #091322;
+        border: 1px solid #263c59;
+        border-radius: 16px;
+      }
+      .future-detail h2 {
+        margin: 28px 0 12px;
+        color: #eef4ff;
+      }
+      .future-detail p,
+      .future-detail li {
+        color: #bfcede;
+        line-height: 1.7;
+      }
+      .future-detail li {
+        margin: 9px 0;
+      }
+      .future-detail .future-tag {
+        display: inline-block;
+        border-radius: 8px;
+        padding: 6px 10px;
+        background: #142946;
+        color: #aad0ff;
+        font-size: 0.77rem;
+        font-weight: 700;
+      }
+      .future-caption {
+        font-size: 0.78rem;
+        color: #92a7c0;
+        margin: 9px 0 22px;
+      }
+      .future-detail footer {
+        margin-top: 35px;
+      }
+      .future-detail footer a {
+        color: #93c5fd;
+      }
+      @media (max-width: 960px) {
+        .future-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 650px) {
+        .future-grid {
+          grid-template-columns: 1fr;
+        }
+        .future-shell {
+          padding-top: 32px;
+        }
+        .future-image {
+          position: relative;
+        }
+        .future-category {
+          position: absolute;
+          top: 12px;
+          left: 12px;
+          z-index: 1;
+          padding: 7px 13px;
+          border-radius: 999px;
+          background: rgba(8, 18, 32, 0.91);
+          border: 1px solid #6b8cb8;
+          color: #fff;
+          font-weight: 800;
+          letter-spacing: 0.09em;
+          font-size: 0.7rem;
+          box-shadow: 0 3px 14px #0009;
+        }
+        .future-card img {
+          height: 190px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background: #080e1b; color: #eef4ff">
+    <main class="future-shell">
+      <a class="future-back" href="index.html#projetos"
+        >← Voltar ao portfólio</a
+      >
+      <div class="future-eyebrow">IDEIAS EM PLANEJAMENTO</div>
+      <h1>Próximos projetos<span style="color: #77b4ff">.</span></h1>
+      <p class="future-intro">
+        Seis conceitos que pretendo desenvolver futuramente. Os trabalhos
+        concluídos continuam na página principal; aqui apresento ideias,
+        objetivos e possibilidades de funcionalidades.
+      </p>
+      <p class="future-disclaimer">
+        As imagens abaixo são
+        <strong>ilustrações conceituais geradas por IA</strong>, não capturas de
+        sistemas desenvolvidos. Nomes, funcionalidades e tecnologias podem mudar
+        durante o planejamento. Os dados apresentados nas imagens são fictícios.
+      </p>
+      <div class="future-grid" id="future-grid"></div>
+    </main>
+    <script src="futuros-dados.js"></script>
+    <script>
+      const grid = document.getElementById("future-grid");
+      for (const p of window.futureProjects) {
+        const card = document.createElement("article");
+        card.className = "future-card";
+        const image = document.createElement("img");
+        image.src = p.image;
+        image.alt = "Ilustração conceitual da interface de " + p.name;
+        image.loading = "lazy";
+        const imageWrap = document.createElement("div");
+        imageWrap.className = "future-image";
+        imageWrap.appendChild(image);
+        const category = document.createElement("span");
+        category.className = "future-category";
+        category.textContent = p.category || "FULL STACK";
+        imageWrap.appendChild(category);
+        card.appendChild(imageWrap);
+        const body = document.createElement("div");
+        body.className = "future-card-body";
+        const badge = document.createElement("span");
+        badge.className = "future-status";
+        badge.textContent = "PLANEJADO · NÃO INICIADO";
+        body.appendChild(badge);
+        const title = document.createElement("h2");
+        title.textContent = p.name;
+        body.appendChild(title);
+        const summary = document.createElement("p");
+        summary.textContent = p.subtitle + ". " + p.description;
+        body.appendChild(summary);
+        const tech = document.createElement("div");
+        tech.className = "future-tech";
+        tech.textContent = p.tech;
+        body.appendChild(tech);
+        const link = document.createElement("a");
+        link.className = "future-detail-link";
+        link.href = "futuro.html?id=" + encodeURIComponent(p.slug);
+        link.textContent = "Conhecer a ideia →";
+        body.appendChild(link);
+        card.appendChild(body);
+        grid.appendChild(card);
+      }
+    </script>
+  </body>
+</html>
